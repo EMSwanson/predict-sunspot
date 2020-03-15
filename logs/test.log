@@ -1,0 +1,310 @@
+2020-03-10 21:59:01,235 - log_time - ERROR - Exception in prep_data
+Traceback (most recent call last):
+  File "/home/ems/Projects/learning/ml/sunspots/log_time.py", line 25, in wrapper
+    return fn(*args, **kwargs)
+  File "prep_data.py", line 29, in prep_data
+    raise ValueError("error happened")
+ValueError: error happened
+2020-03-10 22:11:21,378 - log_time - ERROR - Exception in prep_data
+Traceback (most recent call last):
+  File "/home/ems/Projects/learning/ml/sunspots/log_time.py", line 25, in wrapper
+    return fn(*args, **kwargs)
+  File "prep_data.py", line 29, in prep_data
+    raise ValueError("error happened")
+ValueError: error happened
+2020-03-10 22:13:04,923 create_logger ERROR: Exception in prep_data
+Traceback (most recent call last):
+  File "/home/ems/Projects/learning/ml/sunspots/log_decorators.py", line 13, in wrapper
+    return fn(*args, **kwargs)
+  File "prep_data.py", line 29, in prep_data
+    raise ValueError("error happened")
+ValueError: error happened
+2020-03-10 22:13:53,545 create_logger INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:14:33,495 create_logger INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:14:51,492 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:16:14,883 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:16:28,008 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:16:28,009 prep_data INFO:       index    Month  Sunspots
+0         0  1749-01      58.0
+1         1  1749-02      62.6
+2         2  1749-03      70.0
+3         3  1749-04      55.7
+4         4  1749-05      85.0
+...     ...      ...       ...
+2251   2251  1936-08      87.0
+2252   2252  1936-09      76.0
+2253   2253  1936-10      89.0
+2254   2254  1936-11     115.4
+2255   2255  1936-12     123.4
+
+[2256 rows x 3 columns]
+2020-03-10 22:16:28,009 prep_data INFO:       index    Month  Sunspots
+0         0  1749-01      58.0
+1         1  1749-02      62.6
+2         2  1749-03      70.0
+3         3  1749-04      55.7
+4         4  1749-05      85.0
+...     ...      ...       ...
+2251   2251  1936-08      87.0
+2252   2252  1936-09      76.0
+2253   2253  1936-10      89.0
+2254   2254  1936-11     115.4
+2255   2255  1936-12     123.4
+
+[2256 rows x 3 columns]
+2020-03-10 22:18:01,297 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:18:23,549 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:20:23,504 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:20:23,522 prep_data INFO: /n    index    Month  Sunspots
+0      0  1749-01      58.0
+1      1  1749-02      62.6
+2      2  1749-03      70.0
+3      3  1749-04      55.7
+4      4  1749-05      85.0
+2020-03-10 22:20:23,522 prep_data INFO: /n    index    Month  Sunspots
+0      0  1749-01      58.0
+1      1  1749-02      62.6
+2      2  1749-03      70.0
+3      3  1749-04      55.7
+4      4  1749-05      85.0
+2020-03-10 22:20:38,172 log_decorators INFO:  prep_data ran for: 0.000000 minutes
+2020-03-10 22:20:38,188 prep_data INFO: 
+    index    Month  Sunspots
+0      0  1749-01      58.0
+1      1  1749-02      62.6
+2      2  1749-03      70.0
+3      3  1749-04      55.7
+4      4  1749-05      85.0
+2020-03-10 22:20:38,188 prep_data INFO: 
+    index    Month  Sunspots
+0      0  1749-01      58.0
+1      1  1749-02      62.6
+2      2  1749-03      70.0
+3      3  1749-04      55.7
+4      4  1749-05      85.0
+2020-03-14 12:44:01,338 Sunspot INFO: test
+2020-03-14 12:44:01,338 Sunspot INFO: test
+2020-03-14 12:44:21,795 Sunspot INFO: test
+2020-03-14 12:44:21,795 Sunspot INFO: test
+2020-03-14 12:44:30,789 Sunspot INFO: logger test
+2020-03-14 12:44:30,789 Sunspot INFO: logger test
+2020-03-14 12:44:30,789 Sunspot INFO: 200
+2020-03-14 12:44:30,789 Sunspot INFO: 200
+2020-03-14 12:45:22,105 Sunspot INFO: test
+2020-03-14 12:45:22,105 Sunspot INFO: test
+2020-03-14 12:45:31,825 Sunspot INFO: logger test
+2020-03-14 12:45:31,825 Sunspot INFO: logger test
+2020-03-14 12:45:31,825 Sunspot INFO: 200
+2020-03-14 12:45:31,825 Sunspot INFO: 200
+2020-03-14 12:45:40,818 Sunspot INFO:                                                                  dataset
+collapse                                                            None
+column_index                                                        None
+column_names           [Date, Daily Sunspot Number, Standard Deviatio...
+data                   [[2020-02-29, 0.0, 0.0, 23.0, 0.0], [2020-02-2...
+database_code                                                       SIDC
+database_id                                                          428
+dataset_code                                                  SUNSPOTS_D
+description            <p>Since 1981, the Royal Observatory of Belgiu...
+end_date                                                      2020-02-29
+frequency                                                          daily
+id                                                               2404058
+limit                                                               None
+name                                       Total Sunspot Numbers (Daily)
+newest_available_date                                         2020-02-29
+oldest_available_date                                         1818-01-08
+order                                                               None
+premium                                                            False
+refreshed_at                                    2020-03-01T12:31:15.751Z
+start_date                                                    1818-01-08
+transform                                                           None
+type                                                         Time Series
+2020-03-14 12:45:40,818 Sunspot INFO:                                                                  dataset
+collapse                                                            None
+column_index                                                        None
+column_names           [Date, Daily Sunspot Number, Standard Deviatio...
+data                   [[2020-02-29, 0.0, 0.0, 23.0, 0.0], [2020-02-2...
+database_code                                                       SIDC
+database_id                                                          428
+dataset_code                                                  SUNSPOTS_D
+description            <p>Since 1981, the Royal Observatory of Belgiu...
+end_date                                                      2020-02-29
+frequency                                                          daily
+id                                                               2404058
+limit                                                               None
+name                                       Total Sunspot Numbers (Daily)
+newest_available_date                                         2020-02-29
+oldest_available_date                                         1818-01-08
+order                                                               None
+premium                                                            False
+refreshed_at                                    2020-03-01T12:31:15.751Z
+start_date                                                    1818-01-08
+transform                                                           None
+type                                                         Time Series
+2020-03-14 19:19:56,903 sunspot INFO: test
+2020-03-14 19:19:56,903 sunspot INFO: test
+2020-03-14 19:20:27,043 sunspot INFO: test
+2020-03-14 19:20:27,043 sunspot INFO: test
+2020-03-14 19:20:57,996 sunspot INFO: test
+2020-03-14 19:20:57,996 sunspot INFO: test
+2020-03-14 19:21:10,837 sunspot INFO: test
+2020-03-14 19:21:10,837 sunspot INFO: test
+2020-03-14 19:22:10,602 sunspot INFO: test
+2020-03-14 19:22:10,602 sunspot INFO: test
+2020-03-14 19:22:19,194 sunspot INFO: logger test
+2020-03-14 19:22:19,194 sunspot INFO: logger test
+2020-03-14 19:22:19,194 sunspot INFO: 200
+2020-03-14 19:22:19,194 sunspot INFO: 200
+2020-03-14 19:22:51,019 sunspot INFO: test
+2020-03-14 19:22:51,019 sunspot INFO: test
+2020-03-14 19:23:01,085 sunspot INFO: logger test
+2020-03-14 19:23:01,085 sunspot INFO: logger test
+2020-03-14 19:23:01,085 sunspot INFO: 200
+2020-03-14 19:23:01,085 sunspot INFO: 200
+2020-03-14 19:23:15,161 sunspot INFO: test
+2020-03-14 19:23:15,161 sunspot INFO: test
+2020-03-14 19:23:23,468 sunspot INFO: logger test
+2020-03-14 19:23:23,468 sunspot INFO: logger test
+2020-03-14 19:23:23,468 sunspot INFO: 200
+2020-03-14 19:23:23,468 sunspot INFO: 200
+2020-03-14 19:23:32,733 sunspot INFO: test
+2020-03-14 19:23:32,733 sunspot INFO: test
+2020-03-14 19:23:41,392 sunspot INFO: logger test
+2020-03-14 19:23:41,392 sunspot INFO: logger test
+2020-03-14 19:23:41,392 sunspot INFO: 200
+2020-03-14 19:23:41,392 sunspot INFO: 200
+2020-03-14 20:14:55,673 sunspot INFO: test
+2020-03-14 20:14:55,673 sunspot INFO: test
+2020-03-14 20:15:13,698 sunspot INFO: test
+2020-03-14 20:15:13,698 sunspot INFO: test
+2020-03-14 20:15:26,937 sunspot INFO: test
+2020-03-14 20:15:26,937 sunspot INFO: test
+2020-03-14 20:16:03,530 sunspot INFO: test
+2020-03-14 20:16:03,530 sunspot INFO: test
+2020-03-14 20:16:12,297 sunspot INFO: logger test
+2020-03-14 20:16:12,297 sunspot INFO: logger test
+2020-03-14 20:16:41,969 sunspot INFO: test
+2020-03-14 20:16:41,969 sunspot INFO: test
+2020-03-14 20:16:51,122 sunspot INFO: logger test
+2020-03-14 20:16:51,122 sunspot INFO: logger test
+2020-03-14 20:17:17,282 sunspot INFO: test
+2020-03-14 20:17:17,282 sunspot INFO: test
+2020-03-14 20:17:26,009 sunspot INFO: logger test
+2020-03-14 20:17:26,009 sunspot INFO: logger test
+2020-03-14 20:17:26,009 sunspot INFO: 200
+2020-03-14 20:17:26,009 sunspot INFO: 200
+2020-03-14 20:19:52,792 sunspot INFO: test
+2020-03-14 20:19:52,792 sunspot INFO: test
+2020-03-14 20:20:02,843 sunspot INFO: logger test
+2020-03-14 20:20:02,843 sunspot INFO: logger test
+2020-03-14 20:20:02,844 sunspot INFO: 200
+2020-03-14 20:20:02,844 sunspot INFO: 200
+2020-03-15 11:16:00,180 sunspot_fetcher INFO: test
+2020-03-15 11:16:00,180 sunspot_fetcher INFO: test
+2020-03-15 11:16:22,661 sunspot_fetcher INFO: test
+2020-03-15 11:16:22,661 sunspot_fetcher INFO: test
+2020-03-15 11:18:04,694 sunspot_fetcher INFO: test
+2020-03-15 11:18:04,694 sunspot_fetcher INFO: test
+2020-03-15 11:18:14,427 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:18:14,427 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:18:14,492 sunspot_fetcher INFO: logger test
+2020-03-15 11:18:14,492 sunspot_fetcher INFO: logger test
+2020-03-15 11:19:39,721 sunspot_fetcher INFO: test
+2020-03-15 11:19:39,721 sunspot_fetcher INFO: test
+2020-03-15 11:22:23,041 sunspot_fetcher INFO: test
+2020-03-15 11:22:23,041 sunspot_fetcher INFO: test
+2020-03-15 11:22:32,497 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:22:32,497 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:22:57,644 sunspot_fetcher INFO: test
+2020-03-15 11:22:57,644 sunspot_fetcher INFO: test
+2020-03-15 11:23:15,784 sunspot_fetcher INFO: test
+2020-03-15 11:23:15,784 sunspot_fetcher INFO: test
+2020-03-15 11:23:24,735 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:23:24,735 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:26:43,152 sunspot_fetcher INFO: test
+2020-03-15 11:26:43,152 sunspot_fetcher INFO: test
+2020-03-15 11:26:52,343 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:26:52,343 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:28:51,212 sunspot_fetcher INFO: test
+2020-03-15 11:28:51,212 sunspot_fetcher INFO: test
+2020-03-15 11:29:00,413 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:29:00,413 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:29:43,712 sunspot_fetcher INFO: test
+2020-03-15 11:29:43,712 sunspot_fetcher INFO: test
+2020-03-15 11:29:52,375 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:29:52,375 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 11:29:52,421 sunspot_fetcher INFO: 200
+2020-03-15 11:29:52,421 sunspot_fetcher INFO: 200
+2020-03-15 14:01:03,171 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 14:01:03,171 sunspot_fetcher INFO:          Date  Daily Sunspot Number  Standard Deviation  Number of Observations  Definitive/Provisional Indicator
+0  2020-02-29                   0.0                 0.0                    23.0                               0.0
+1  2020-02-28                   0.0                 0.0                    32.0                               0.0
+2  2020-02-27                   0.0                 0.0                    28.0                               0.0
+3  2020-02-26                   0.0                 0.0                    30.0                               0.0
+4  2020-02-25                   0.0                 0.0                    25.0                               0.0
+2020-03-15 14:01:03,212 sunspot_fetcher INFO: 200
+2020-03-15 14:01:03,212 sunspot_fetcher INFO: 200
